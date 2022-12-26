@@ -1,0 +1,21 @@
+#experience {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right,#ff0071,#a21af0);
+}
+
+#experience h1 {
+    text-transform: uppercase;
+    font-family: 'Helios';
+    color: white;
+    text-align: center;
+}
+
+.exp {
+    text-align: center;
+}
+
+.experience {
+    position: relative;
+    justify-content: center;
+}

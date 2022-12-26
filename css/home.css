@@ -1,0 +1,62 @@
+.container_2 p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(3, 3, 3);
+    font-size: 1.45rem;
+    font-weight: 300;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgba(240, 248, 255, 0.356);
+    text-shadow: #ffffff 0 0  20px;
+}
+
+.container_2 h3 {
+    color: white;
+    font-family: 'Helios';
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 5px 5px 3px black;
+}
+
+.container_2 h1 {
+    background: linear-gradient(to right,#a21af0,#ff0071);
+    font-family: Arial, Helvetica, sans-serif;
+    color: transparent;
+    font-size: 5rem;
+    font-weight: 750;
+    text-align: center;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media (max-width: 767px) {
+    .container_2 p {
+        font-size: 1rem;
+    }
+    .container_2 h3 {
+        font-size: 2rem;
+    }
+    .container_2 h1{
+        font-size: 3.7rem;
+        text-align: center;
+    }
+    .container_2 {
+        background-color: black;
+        text-align: start;
+    }
+}
+
+.container_2 {
+    border-radius: 25px;
+}
+.container_2 a {
+    background: linear-gradient(to right,#a21af0,#ff0071);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
+.container_2 a:hover{
+    background: linear-gradient(to right,#ff0071,#a21af0, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: none;
+}
