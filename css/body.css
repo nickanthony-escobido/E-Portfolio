@@ -1,42 +1,42 @@
 @font-face {
-    font-family: 'Helios';
-    src: url(../font/Helios.ttf);
+  font-family: "Helios";
+  src: url(../font/Helios.ttf);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .bg {
-    width: 100%;
-    background-image: url('../images/bg.gif');
-    background-repeat: no-repeat;
-    background-size: cover;
+  width: 100%;
+  background-blend-mode: hard-light;
+  background-image: url("../images/f6ZEPU.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-section{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-bottom: 0;
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 0;
 }
-
 
 footer {
-    color: rgba(255, 255, 255,1);
-    font-family: 'Helios';
-    text-shadow: 0 0 20px black;
+  color: rgba(255, 255, 255, 1);
+  font-family: "Helios";
+  text-shadow: 0 0 20px black;
 }
 
 .breaker {
-    background: linear-gradient(to right,#a21af0,#ff0071);
-    border: none;
-    border-radius: 20px;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(to right, #a21af0, #ff0071);
+  border: none;
+  border-radius: 20px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

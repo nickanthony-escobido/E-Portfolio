@@ -1,105 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+
 .container {
-    padding: 0;
-    margin: 0;
-    justify-content: center;
-    align-items: center;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
 }
 .container_1 img {
-    width: 400px;
-    height: 450px;
-    animation: fadeInfromTop 1s linear forwards, floating ease 5s infinite;
-    align-items: center;
+  width: 100%;
+  height: 500px;
+  animation: fadeInfromTop 1s linear forwards, floating ease 5s infinite;
+  align-items: center;
 }
 
 @keyframes fadeInfromTop {
-    from{
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @keyframes floating {
-    0% {
-        transform: translate(5%, 0%) rotate(360deg);
-    }
-    25% {
-        transform: translate(10%, 0%) rotate(360deg);
-    }
-    50% {
-        transform: translate(0%, 0%) rotate(0deg);
-    }
-    75% {
-        transform: translate(10%, 0%) rotate(360deg);
-    }
-    100% {
-        transform: translate(5%, 0%) rotate(360deg);
-    }
+  0% {
+    transform: translate(-5%, 5%);
+  }
+  25% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(5%, -5%);
+  }
+  75% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-5%, 5%);
+  }
 }
-
 
 h3 {
-    color: aliceblue;
+  color: aliceblue;
 }
 
-
-
 .about-me {
-    text-align: justify;
-    border-radius: 25px;
+  text-align: justify;
+  border-radius: 25px;
 }
 
 .about-me p {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1.5rem;
-    font-weight: 300;
-    line-height: 25px;
-    text-indent: 50px;
+  text-decoration: none;
+  font-family: "Caveat";
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 25px;
+  text-indent: 50px;
 }
 .about-me h3 {
-    text-decoration: none;
-    color: rgb(46, 27, 45);
-    font-family: 'Helios';
-    font-size: 1.5rem;
-    font-weight: 300;
-    text-align: end;
+  text-decoration: none;
+  color: rgb(46, 27, 45);
+  font-family: "Helios";
+  font-size: 1rem;
+  padding-bottom: 25px;
 }
 .about-me h1 {
-    background: linear-gradient(to right,#a21af0,#ff0071);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: 'Helios';
-    font-size: 2.2rem;
-    font-weight: 500;
-    text-align: end;
-    padding-bottom: 0px;
+  /* background: linear-gradient(to right, #a21af0, #ff0071);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: "Helios"; */
+  font-family: "Sigmar";
+  font-size: 2.2rem;
+  font-weight: 500;
+  padding-bottom: 0px;
 }
 @media (max-width: 767px) {
-    .about-me h3 {
-        font-size: 2rem;
-        text-align: center;
-    }
-    .about-me P {
-        font-size: 1.5rem;
-    }
-    .about-me h1{
-        font-size: 2.2rem;
-        word-spacing: 5px;
-        letter-spacing: 0;
-    }
+  .about-me h3 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .about-me P {
+    font-size: 1.5rem;
+  }
+  .about-me h1 {
+    font-size: 2.2rem;
+    word-spacing: 5px;
+    letter-spacing: 0;
+  }
 }
 .about-me a {
-    color: brown;
-    text-decoration: none;
+  color: brown;
+  text-decoration: none;
 }
 
 .icon {
-    justify-content: center;
-    vertical-align: middle;
-    color: #ff0071;
+  justify-content: center;
+  vertical-align: middle;
+  color: #ff0071;
+}
+.abtTitle {
+  justify-content: center;
+  text-align: center;
+  font-family: "Sigmar";
+  color: rgb(160, 3, 199);
+}
+h3.email {
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+}
+h3.email span {
+  font-family: "Helios";
+  color: rgb(160, 3, 199);
+}
+@media screen and (max-width: 768px) {
+  img.container_1 {
+    height: 600px;
+  }
 }

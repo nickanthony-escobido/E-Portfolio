@@ -1,4 +1,4 @@
-.container_2 p {
+/* .container_2 p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: rgb(3, 3, 3);
     font-size: 1.45rem;
@@ -59,4 +59,93 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-decoration: none;
+} */
+@import url("https://fonts.googleapis.com/css2?family=Sigmar&display=swap");
+body {
+  box-sizing: border-box;
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.containerA {
+  justify-content: center;
+  vertical-align: middle;
+  text-align: justify;
+}
+
+h2.greetings {
+  font-family: "Sigmar";
+  font-size: 50px;
+  color: rgb(160, 3, 199);
+}
+
+span.nickAnthony {
+  color: black;
+}
+
+.webDev {
+  letter-spacing: 0;
+  font-family: "Helios";
+  word-spacing: 0;
+  font-size: 18px;
+  color: rgb(66, 66, 65);
+}
+
+li.SMlinksbtn {
+  list-style-type: none;
+  display: inline-block;
+  padding: 12px;
+}
+
+.devImg img {
+  width: 100%;
+  height: 450px;
+  animation: fadeIn 1s linear forwards, floating ease 5s infinite;
+  align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+  .devImg img {
+    height: 525px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translate(-5%, 5%);
+  }
+  25% {
+    transform: translate(0%, 0%);
+  }
+  50% {
+    transform: translate(5%, -5%);
+  }
+  75% {
+    transform: translate(0%, 0%);
+  }
+  100% {
+    transform: translate(-5%, 5%);
+  }
+}
+
+a.abtMe {
+  font-family: "Helios";
+  background-color: rgb(160, 3, 199);
+  color: white;
+}
+a.abtMe:hover {
+  outline: 2px outset rgb(160, 3, 199);
 }
