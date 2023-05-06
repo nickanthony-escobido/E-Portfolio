@@ -715,66 +715,49 @@
       </div>
     </section>
 
-    <!-- <section id="blog" class="bg_2 d-flex bg-black">
-          <img src="images/pika.gif" alt="img">
-        </section> -->
+
 
     <section
       id="contact"
-      class="d-flex bg d-flex flex-column w-100 h-100 justify-content-center"
+      class="bg d-flex d-flex flex-column w-100 h-100 justify-content-center"  
     >
-      <div class="p-5 contact container">
-        <h1 class="d-flex justify-content-center text-white">CONTACT ME</h1>
-        <p class="d-flex justify-content-center text-white pb-3">
-          You have a project proposal or a job offer ? Message me.
-        </p>
-        <div class="">
-          <div class="row-lg-9 d-lg-flex gap-3">
-            <div class="col">
-              <input
-                type="text"
-                class="form-control col-md-6 mb-2"
-                placeholder="First name"
-                aria-label="First name"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="email"
-                class="form-control col-md-6 mb-2"
-                placeholder="Email or Mobile Number"
-                aria-label="Email"
-              />
-            </div>
-            <div class="col">
-              <input
-                type="text"
-                class="form-control col-md-6 mb-2"
-                placeholder="Last name"
-                aria-label="Last name"
-              />
-            </div>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label"></label>
-            <textarea
-              type="text"
-              class="form-control"
-              placeholder="Messages"
-              aria-label="message"
-              id="message"
-              rows="3"
-            ></textarea>
-          </div>
-        </div>
+    <h3 class="mt-lg-5 pt-lg-5 getInTouch">Get in <span>Touch</span></h3>
+    <div class="container  containerBox row  contact ">
+      <div class="col-lg-5 flex-column pt-lg-0 order-1 order-lg-1">
+        <img src="https://institute.careerguide.com/wp-content/uploads/2020/09/mdm_robot.gif" 
+        class="contactImg"  alt="">
       </div>
+    <div class="col-lg-6 order-2 order-lg-2 container_1 ps-5">
+      <form onsubmit="sendEmail(); reset(); return false">
+        <!-- Name input -->
+        <div class="form-outline mb-4">
+          <input type="text" id="name" class="form-control form-box" placeholder="Name" aria-label="Name"/>
+        </div>
 
-      <footer
-        class="d-flex justify-content-center vertical-align-bottom"
-        style="height: 50px"
-      >
-        <h5>MINI PROJECT OF NICK ANTHONY ESCOBIDO. ALL RIGHTS RESERVED.</h5>
-      </footer>
+        <!-- Email input -->
+        <div class="form-outline mb-4">
+          <input type="email" id="email" class="form-control form-box" placeholder="Email" aria-label="Email"/>
+        </div>
+        <div class="form-outline mb-4">
+          <input type="number" id="number" class="form-control form-box" placeholder="Mobile Number" aria-label="Mobile Number"/>
+        </div>
+
+        <!-- Message input -->
+        <div class="form-outline mb-4">
+          <textarea class="form-control form-box" id="message" style="color: white;  background-color: rgb(160, 3, 199);
+" rows="4" placeholder="Message" aria-label="Message"></textarea>
+        </div>
+
+        <!-- Submit button -->
+        <a onclick="sendEmail()" type="submit" class="btn abtMe btn-block mb-4">Send     
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-fill" viewBox="0 0 16 16">
+            <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+          </svg>
+        </a>
+      </form>
+    </div>
+    </div>
+
     </section>
 
     <script
@@ -786,6 +769,15 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-    <script src="js/navbar.js"></script>
+    <script src="./js/navbar.js"></script>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="./js/email.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("gY8zHNM60SuO3TXyz");
+   })();
+</script>
   </body>
 </html>
