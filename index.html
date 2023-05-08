@@ -94,10 +94,10 @@
   </head>
 
   <header>
-    <nav class="navbar navbar-expand-lg fixed-top">
+    <nav class="navbar navbar-expand-sm fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand ps-1" href="#"
-          ><img src="images/logo.png" style="height: 35px"
+          ><img src="images/logo.png"
         /></a>
         <button
           class="navbar-toggler bg-dark"
@@ -111,10 +111,10 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div
-          class="collapse navbar-collapse justify-content-lg-center px-1"
+          class="collapse navbar-collapse bg-body-dark justify-content-lg-center px-1"
           id="navbarSupportedContent"
         >
-          <ul class="navbar-nav mb-1 mb-lg-0 ms-auto navbar_left gap-4">
+          <ul class="navbar-nav mb-1 mb-lg-0 ms-auto">
             <li class="nav-item"></li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#home"
@@ -127,16 +127,12 @@
             </li>
 
             <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Porfolio</a>
+              <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
 
             <li class="nav-item">
               <a class="nav-link" href="#experience">Experience</a>
             </li>
-
-            <!-- <li class="nav-item">
-                  <a class="nav-link" href="#blog">Blog</a>
-                </li> -->
 
             <li class="nav-item">
               <a class="nav-link" href="#contact">Contact</a>
@@ -357,7 +353,7 @@
 
     <section id="portfolio" class="bg2 d-flex mt-5">
       <div class="container px-4 py-5" id="custom-cards">
-        <h2 id="portfolio" class="pb-2 mt-3 text-white">PORFOLIO</h2>
+        <h2 id="portfolio" class="pb-2 mt-3 text-white">PORTFOLIO</h2>
 
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col">
@@ -640,24 +636,33 @@
       </div>
     </section>
 
-    <section
-      id="experience"
-      class="d-flex d-flex w-100 h-100 justify-content-center"
-    >
-      <div class="mt-lg-5">
-        <div class="row justify-content-center d-flex text-align-center mt-2">
-          <h1>Experience</h1>
-        </div>
-        <div
-          class="col-lg-8 col-md-6 d-flex justify-content-center container mt-4"
-        >
-          <div class="container text-white me-5">
-            <h3 style="font-size: 23px">GRAPHIC ARTIST</h3>
-            <h5>2020 - 2022</h5>
-          </div>
-          <div class="bg-white me-5" style="height: 100px; width: 5px"></div>
-          <div>
-            <p class="text-white">
+    <section id="experience" class="d-flex w-100 h-100">
+      <div class="container mt-5">
+        <div class="row justify-content-around d-flex">
+          <h2 class="abtTitle mt-2 mb-5">
+            <svg 
+              xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-person-check-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15.854 5.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L12.5 7.793l2.646-2.647a.5.5 0 0 1 .708 0z"/>
+                <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+            </svg>
+            Experience
+          </h2>
+          <div class="container">
+            <div class="d-flex justify-content-evenly row mb-3 exp">
+              <div
+                class="col-sm-5 col-md-6 text-center"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                >
+                <h3 style="font-size: 23px;">GRAPHIC ARTIST</h3>
+                <h5 class="text-black">2020 - 2022</h5>
+              </div>
+              <div
+                class="col-md-6"
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                >
+                <p class="text-black text-center">
               As a professional in the field of retail and customer service, I
               take great pride in my ability to create and design custom
               solutions for each client's unique needs. I understand that every
@@ -665,14 +670,25 @@
               ensure their satisfaction. That's why I always take the time to
               carefully listen to their needs, preferences, and concerns to
               create a tailored experience that exceeds their expectations.
-            </p>
-          </div>
-        </div>
-        <div
-          class="col-lg-8 col-md-6 d-flex justify-content-center container mt-4"
-        >
-          <div class="me-5">
-            <p class="text-white">
+                </p>
+              </div>
+              </div>
+              <hr style="border: solid 3px black;">
+              <div class="d-flex justify-content-evenly row">
+                <div
+                class="col-sm-5 col-md-6 text-center"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                  >
+                <h3 style="font-size: 23px">GRAPHIC ARTIST</h3>
+                <h5 class="text-black">2020 - 2022</h5>
+                </div>
+                <div
+                class="col-md-6 offset-md-0"
+                  data-aos="zoom-in"
+                  data-aos-delay="200"
+                >
+                <p class="text-black text-center">
               My role involves creating and designing solutions that meet the
               unique needs of our clients. I am also responsible for receiving
               and processing payments and ensuring that all financial
@@ -682,40 +698,14 @@
               Overall, my goal is to contribute to the success of the
               organization by delivering high-quality products and services
               while building positive relationships with our customers.
-            </p>
-          </div>
-          <div class="bg-white me-5" style="height: 100px; width: 5px"></div>
-          <div class="container text-white">
-            <h3 style="font-size: 23px">GRAPHIC ARTIST</h3>
-            <h5>2022 - Present</h5>
+                </p>
+              </div>
+            </div>
           </div>
         </div>
-        <div
-          class="col-lg-8 col-md-6 d-flex justify-content-center container mt-4"
-        >
-          <div class="container text-white me-5">
-            <h3 style="font-size: 23px">WEB DEVELOPER STUDENT</h3>
-            <h5>2022 - Present</h5>
-          </div>
-          <div class="bg-white me-5" style="height: 100px; width: 5px"></div>
-          <div>
-            <p class="text-white">
-              As a recent graduate in web development, I am seeking a
-              challenging position as a Junior Web Developer that will allow me
-              to utilize and further develop my technical skills, creativity,
-              and passion for coding. My goal is to work collaboratively with a
-              team of developers and designers to create engaging and innovative
-              digital experiences. With a solid foundation in HTML, CSS,
-              JavaScript, and experience in modern web development frameworks, I
-              am eager to learn and expand my skill set while contributing to
-              the success of the organization.
-            </p>
-          </div>
-        </div>
+
       </div>
     </section>
-
-
 
     <section
       id="contact"

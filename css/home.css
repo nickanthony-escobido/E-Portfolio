@@ -85,6 +85,16 @@ span.nickAnthony {
   color: black;
 }
 
+@media (max-width: 576px) {
+  h2.greetings {
+    font-size: 40px;
+  }
+
+  h4.webDev {
+    font-size: 15px;
+  }
+}
+
 .webDev {
   letter-spacing: 0;
   font-family: "Helios";

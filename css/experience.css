@@ -1,21 +1,28 @@
 #experience {
-    margin: 0;
-    padding: 0;
-    background: linear-gradient(to right,#ff0071,#a21af0);
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #ff0071, #a21af0);
 }
 
-#experience h1 {
-    text-transform: uppercase;
-    font-family: 'Helios';
-    color: white;
-    text-align: center;
+#experience h2 {
+  text-transform: uppercase;
+  font-family: "Sigmar";
+  color: white;
+  font-size: 40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+#experience h3 {
+  font-family: "Helios";
 }
 
 .exp {
-    text-align: center;
+  display: flex;
+  vertical-align: middle;
 }
 
 .experience {
-    position: relative;
-    justify-content: center;
+  position: relative;
+  justify-content: center;
 }
