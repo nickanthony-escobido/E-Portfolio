@@ -92,7 +92,6 @@
       }
     </style>
   </head>
-
   <header>
     <nav class="navbar navbar-expand-sm fixed-top">
       <div class="container-fluid">
@@ -147,7 +146,36 @@
     </nav>
   </header>
 
-  <body>
+  <body><!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "124854813931986");
+      chatbox.setAttribute("attribution", "biz_inbox");
+    </script>
+
+    <!-- Your SDK code -->
+    <script>
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v16.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
     <section
       id="home"
       class="bg bg-white cover-container d-flex w-100 h-100 p-3 mx-auto text-align-center mt-5"
@@ -655,7 +683,7 @@
                 data-aos-delay="200"
                 >
                 <h3 style="font-size: 23px;">GRAPHIC ARTIST</h3>
-                <h5 class="text-black">2020 - 2022</h5>
+                <h5 class="text-black">2022 - Present</h5>
               </div>
               <div
                 class="col-md-6"
@@ -760,14 +788,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
     <script src="./js/navbar.js"></script>
-<script type="text/javascript"
+    <script type="text/javascript"    
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script src="./js/email.js"></script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("gY8zHNM60SuO3TXyz");
-   })();
-</script>
+    </script>
+    <script src="./js/email.js"></script>
+    <script type="text/javascript">
+       (function(){
+          emailjs.init("gY8zHNM60SuO3TXyz");
+       })();
+    </script>
   </body>
 </html>
